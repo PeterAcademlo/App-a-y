@@ -1,0 +1,50 @@
+{
+    "name": "Angie Capillo",
+    "email": "Angie1213@gmail.com",
+    "rol": "Admin", 
+    "empresas": ["Payson", "Bioimagen", "Medica Sac"],
+    "talentos": [
+        {
+            "userId": "4124124214",
+            "name": "Juan Pérez",
+            "email": "juan.perez@example.com",
+            "edad": "30"
+        },
+        {
+            "userId": "24124124",
+            "name": "María López",
+            "email": "maria.lopez@example.com",
+            "edad": "26"
+        }
+    ],
+    "tareas": [
+        {
+            "ntarea": "tarea01",
+            "empresa": "Payson",
+            "usuarioId": "4124124214",
+            "nombreTarea": "Llenar reportes",
+            "descripcion": "Completar los reportes diarios de ventas.",
+            "status": "pendiente"
+        },
+        {
+            "ntarea": "tarea02",
+            "empresa": "Payson",
+            "usuarioId": "24124124",
+            "nombreTarea": "Revisión de inventario",
+            "descripcion": "Revisar el stock de productos en almacén.",
+            "status": "completado"
+        }
+    ],
+    "asistencia": [
+        {
+            "userId": "4124124214",
+            "date": "2024-09-01",
+            "status": "present"
+        },
+        {
+            "userId": "24124124",
+            "date": "2024-09-01",
+            "status": "absent"
+        }
+    ]
+}

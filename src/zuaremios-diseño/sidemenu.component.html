@@ -1,0 +1,56 @@
+<div
+  id="menu"
+  class="bg-[#fcffff] min-h-full z-10 text-[#005187] left-0 h-full rounded-2xl shadow-2xl flex flex-col p-5">
+
+  <div id="profile" class="px-6 py-10 h-[30%]">
+    <a href="#" class="flex flex-col space-x-2 items-center">
+      <span>
+        <img class="rounded-full w-20 h-20" src="https://img.freepik.com/vector-premium/dibujos-animados-perfil-mujer_18591-58478.jpg" alt="">
+      </span>
+      <p class="text-[#005187] text-sm mb-2">Bienvenida</p>
+       <span class="text-sm md:text-2xl text-[#005187] font-bold">
+           Angie Capillo
+       </span>
+       </a>
+  </div>
+  <div id="nav" class="w-full h-[70%] flex flex-col justify-between gap-5">
+    <div class="flex flex-col gap-4">
+
+      @for (item of menuItems; track $index){
+        <a
+        [routerLink]="item.path"
+        routerLinkActive="bg-[#005187] rounded-lg"
+        href="#" class="w-full px-3 inline-flex space-x-2 items-center hover:rounded-lg rounded-lg py-2 hover:bg-[#4d82bc] transition">
+        <div>
+          <svg
+          routerLinkActive="text-[#fff]"
+           xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-list-details"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 5h8" /><path d="M13 9h5" /><path d="M13 15h8" /><path d="M13 19h5" /><path d="M3 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M3 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /></svg>
+        </div>
+        <div class="flex flex-col">
+          <span
+          routerLinkActive="text-[#fff]"
+          class="text-sm text-[#005187] font-bold leading-5">{{item.title}}</span>
+        </div>
+      </a>
+    }
+  </div>
+
+   <a href="#" class=" mt-10 w-full px-2 inline-flex space-x-2 items-center py-3 hover:bg-white/5 transition ease-linear duration-150">
+       <div>
+         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-logout"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+       </div>
+       <div class="flex flex-col">
+           <span class="text-lg text-[#005187] font-bold leading-5">Salir</span>
+       </div>
+   </a>
+
+  </div>
+  <div class="flex flex-col gap-2 ">
+    <span>paleta de colores</span>
+    <div class="shadow border w-48 h-16 rounded-md bg-[#005187]"></div>
+    <div class="w-48 h-16 rounded-md bg-[#4d82bc]"></div>
+    <div class="w-48 h-16 rounded-md bg-[#84b6f4]"></div>
+    <div class="w-48 h-16 rounded-md bg-[#c4dafa]"></div>
+    <div class="w-48 h-16 rounded-md bg-[#fcffff]"></div>
+  </div>
+</div>

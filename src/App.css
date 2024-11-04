@@ -1,0 +1,114 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color:#005187;
+  --secondary: #04B5AF;
+  --tercer-color: #84b6f4;
+  --cuarto-color: #c4dafa;
+  --blanco-color: #fcffff;
+  --text-color: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: var(--background-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ /* Estilo para navegadores que soportan scrollbar */
+ .custom-scrollbar::-webkit-scrollbar {
+  width: 15px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff; /* Gris claro */
+  border-radius: 100px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #04B5AF; /* Color personalizado */
+  border-radius: 100px;
+  border: 3px solid #04B5AF; /* Espacio alrededor del thumb */
+}
+
+/*--home--*/
+
+.list-users {
+  width: 50vw;
+  height: 78.6vh;
+  border-radius: 20px;
+  background: var();
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.estados-de-tareas{
+  
+  width: 48vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.total-estados{
+  background-color: var(--background-color);
+  text-align: center;
+  width: 10vw;
+  height: 3vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .15);
+}
+
+.total-estados b{
+  margin-top: .1rem;
+  margin-left: 1rem;
+}
+
+.signo-total-estado{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.n-estados{
+ width: 1.4vw;
+ background-color: #f4f4f4;
+ border-radius: 5px;
+}
+
+.color-estado-general{
+  background-color: rgb(0, 255, 17);
+  margin-top: .3vh;
+  margin-right: .3vw;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+
+.puntitos{
+  width: 20px;
+}
+
+
+
+
